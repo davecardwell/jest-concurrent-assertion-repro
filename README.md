@@ -1,5 +1,7 @@
 # jest-concurrent-assertion-repro
 
+See jestjs/jest#14263.
+
 Jest’s `expect.assertions` fails when `test.concurrent` is involved.
 
 Adding `.skip` to either of [the tests](./repro.test.js) and the suite will succeed, but when both are run together:
